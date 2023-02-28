@@ -1,0 +1,33 @@
+{
+  "name": "angular-lsp",
+  "version": "1.0.0",
+  "description": "Angular LSP Server",
+  "author": "",
+  "license": "ISC",
+  "main": "./dist/extension.js",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.1.0"
+  }
+}
